@@ -1,8 +1,8 @@
 // vars
 'use strict'
 var testim = document.getElementById("testim"),
-    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
-    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimDots = Array.prototype.slice.call(document.getElementById("testim__dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim__content").children),
     testimLeftArrow = document.getElementById("left-arrow"),
     testimRightArrow = document.getElementById("right-arrow"),
     testimSpeed = 4500,

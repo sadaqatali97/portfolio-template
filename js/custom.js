@@ -1,3 +1,11 @@
+/*!
+  * Item: Portfolio
+  * Description: Personal Portfolio Template
+  * Author/Developer: SadaqatCode
+  * Version: v1.0.0
+*/
+
+
 (function ($) {
   /*----------------------------------------
               Isotope Masonry
@@ -42,7 +50,7 @@
         // Preloader jQuery
         setTimeout(function(){ 
           $(".preloader").css("display", "none");          
-         }, 2000);
+         }, 700);
 
         // init isotopes
         isotopeMasonry();
@@ -55,6 +63,27 @@
           $('.navbar-collapse').removeClass("show");
           $(".ham").removeClass("active");
       });
+
+
+      // Owl Carousel
+      // $(".skills__slider").owlCarousel();
+
+      $('.skills__slider').owlCarousel({
+          loop: true,
+          nav: true,
+          autoplay: true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              576:{
+                  items: 2,
+              },
+              992:{
+                  items:3
+              }
+          }
+      })
     });
 })(jQuery);
 

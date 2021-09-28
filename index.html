@@ -4,12 +4,18 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <!-- Title-->
+    <title>Personal Portfolio | Template</title>
+    <!-- Description-->
+    <meta name="description" content="Personal Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="/favicon.png"/>
-    <!-- Stylesheet -->
+
+    <!-- Main CSS-->
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Portfolio</title>
+    <!-- CSS Color scheme-->
+    <link rel="stylesheet" id="switcher-id" href="">
+
 </head>
 
 <body>
@@ -26,10 +32,11 @@
 
 
     <header>
-        <div class="container-fluid">
+        <div class="container__large">
+            <!-- Navbar menu-->
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">{
-                    <span data-aos="zoom-in" data-aos-easing="1000">HP</span>}
+                <a class="navbar-brand" href="#">
+                    <span data-aos="zoom-in" data-aos-easing="1000">Portfolio</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
@@ -86,17 +93,17 @@
                     <p class="pt-md-4 pt-1">Find Me on</p>
                     <ul class="social__links">
                         <li>
-                            <a href="https://www.facebook.com/xavier.hadi.7" target="_blank" class="fa fa-facebook"></a>
+                            <a href="#" target="_blank" class="fa fa-facebook"></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/hadi_pawar" target="_blank" class="fa fa-twitter"></a>
+                            <a href="#" target="_blank" class="fa fa-twitter"></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/hadi_pawar1995/" target="_blank"
+                            <a href="#" target="_blank"
                                 class="fa fa-instagram"></a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/hadi-pawar-993778164/" target="_blank"
+                            <a href="#" target="_blank"
                                 class="fa fa-linkedin"></a>
                         </li>
                     </ul>
@@ -105,9 +112,9 @@
                         <a href="#portfolio" class="btn btn-outline-light">Portfolio</a>
                     </div>
                 </div>
-                <div class="img">
-                    <img src="images/hadi-2.jpeg" alt="" data-aos="fade-left" data-aos-duration="1000" />
-                    <img src="images/pattern-1.png" alt="pattern" class="pattern-inner" />
+                <div class="home__img">
+                    <img src="images/men.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
+                    <img src="images/pattern-1.png" alt="pattern" class="pattern__inner" />
                 </div>
             </div>
 
@@ -118,6 +125,14 @@
             <div class="pattern__bottom">
                 <img src="images/pattern-2.png" alt="pattern" />
             </div>
+
+
+            <!-- Doen Arrow -->
+            <a href="#about" class="down__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512" class="svg replaced-svg">
+                    <path d="m32 8c-1.104 0-2 .896-2 2v39.899l-14.552-15.278c-.761-.799-2.026-.832-2.828-.069-.8.762-.831 2.027-.069 2.827l16.62 17.449c.756.756 1.76 1.172 2.829 1.172 1.068 0 2.073-.416 2.862-1.207l16.586-17.414c.762-.8.73-2.065-.069-2.827-.799-.763-2.065-.731-2.827.069l-14.552 15.342v-39.963c0-1.104-.896-2-2-2z"></path>
+                </svg>
+            </a>
         </section>
         <!-- Home Section end -->
 
@@ -128,7 +143,7 @@
                         <div class="about__me text-center text-md-left" data-aos="fade-up" data-aos-duration="2000">
                             <h2>About me</h2>
                             <div class="about_mobile_img d-flex d-md-none">
-                                <img src="images/hadi.png" alt="" />
+                                <img src="images/men-2.png" alt="" />
                             </div>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -146,7 +161,7 @@
                     </div>
                     <div class="col-md-5 d-md-block d-none">
                         <div class="about__img">
-                            <img src="images/hadi.png" alt="" />
+                            <img src="images/men-2.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -294,70 +309,104 @@
                     </p>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="owl-carousel skills__slider">
+                    <div class="slider__item">
                         <div class="capability__card" data-aos="zoom-in" data-aos-duration="700">
                             <div class="icon">
-                                <img src="images/design-icon.png" />
+                                <img src="images/react.svg" />
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>React.js</h4>
                             <p>
-                                Get awesome design services from inkyy.com
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipisicing elit sed do eiusmod tempor.
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-5">
+                    <div class="slider__item">
                         <div class="capability__card" data-aos="zoom-in" data-aos-duration="700">
                             <div class="icon">
-                                <img src="images/design-icon.png" />
+                                <img src="images/vue.svg" />
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>Vue.js</h4>
                             <p>
-                                Get awesome design services from inkyy.com
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-5">
+                    <div class="slider__item">
                         <div class="capability__card" data-aos="zoom-in" data-aos-duration="700">
                             <div class="icon">
-                                <img src="images/design-icon.png" />
+                                <img src="images/next.svg" />
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>Next.js</h4>
                             <p>
-                                Get awesome design services from inkyy.com
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-5">
+                    <div class="slider__item">
                         <div class="capability__card" data-aos="zoom-in" data-aos-duration="700">
                             <div class="icon">
-                                <img src="images/design-icon.png" />
+                                <img src="images/node.svg" />
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>Node.js</h4>
                             <p>
-                                Get awesome design services from inkyy.com
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-5">
+                    <div class="slider__item">
                         <div class="capability__card" data-aos="zoom-in" data-aos-duration="700">
                             <div class="icon">
-                                <img src="images/design-icon.png" />
+                                <img src="images/mongoDB.svg" />
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>MongoDB</h4>
                             <p>
-                                Get awesome design services from inkyy.com
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-5">
+                    <div class="slider__item">
                         <div class="capability__card" data-aos="zoom-in" data-aos-duration="700">
                             <div class="icon">
-                                <img src="images/design-icon.png" />
+                                <img src="images/mysql.svg" />
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>SQL</h4>
                             <p>
-                                Get awesome design services from inkyy.com
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="capability__card" data-aos="zoom-in" data-aos-duration="700">
+                            <div class="icon">
+                                <img src="images/aws.png" />
+                            </div>
+                            <h4>AWS</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="capability__card" data-aos="zoom-in" data-aos-duration="700">
+                            <div class="icon">
+                                <img src="images/php.svg" />
+                            </div>
+                            <h4>PHP</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="capability__card" data-aos="zoom-in" data-aos-duration="700">
+                            <div class="icon">
+                                <img src="images/circleci.svg" />
+                            </div>
+                            <h4>CI/CD</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </p>
                         </div>
                     </div>
@@ -380,10 +429,10 @@
                     <div class="row align-items-center">
                         <!-- Slider dots Col -->
                         <div class="col-md-6">
-                            <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                            <span id="right-arrow" class="arrow rxight fa fa-chevron-right"></span>
                             <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
                             <!--  -->
-                            <ul id="testim-dots" class="dots">
+                            <ul id="testim__dots" class="dots">
                                 <li class="dot active">
                                     <img src="images/client-1.jpg" />
                                 </li>
@@ -407,7 +456,7 @@
                         </div>
                         <!-- Slider Slides Col -->
                         <div class="col-md-6">
-                            <div id="testim-content" class="cont">
+                            <div id="testim__content" class="cont">
                                 <div class="slide active">
                                     <div class="stars">
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -623,12 +672,32 @@
             </div>
         </section>
         <!-- Contact Section End -->
+
+        <!-- theme colors switcher -->
+        <div class="theme__switches">
+            <div class="switcher__toggleBtn">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+            <div class="colors__box">
+                <h6 class="title__switcher">Color Switcher</h6>
+                <div data-theme="default" class="switch bg__default fa fa-heart" id="switch-1"></div>
+                <div data-theme="yellow" class="switch bg__yellow fa fa-heart" id="switch-2"></div>
+                <div data-theme="purple" class="switch bg__purple fa fa-heart" id="switch-9"></div>
+                <div data-theme="green" class="switch bg__green fa fa-heart" id="switch-4"></div>
+                <div data-theme="lightgreen" class="switch bg__lightGreen fa fa-heart" id="switch-5"></div>
+                <div data-theme="blue" class="switch bg__blue fa fa-heart" id="switch-6"></div>
+                <div data-theme="orange" class="switch bg__orange fa fa-heart" id="switch-7"></div>
+                <div data-theme="sky" class="switch bg__sky fa fa-heart" id="switch-8"></div>
+                <div data-theme="pink" class="switch bg__pink fa fa-heart" id="switch-3"></div>
+                <div data-theme="crimson" class="switch bg__crimson fa fa-heart" id="switch-10"></div>
+            </div>
+        </div>
     </div>
 
     <footer class="bg__dark">
         <div class="container">
             <div class="footer__logo">
-                <a href="#" data-aos="zoom-in" data-aos-duration="700">{<span>HP</span>}</a>
+                <a href="#" data-aos="zoom-in" data-aos-duration="700"><span>Porfolio</span></a>
             </div>
             <ul class="footer__list mb-4">
                 <li>
@@ -646,38 +715,37 @@
             </ul>
             <!-- \\ -->
             <ul class="footer__list mb-5">
-                <li>Islamabad, Pakistan </li>
+                <li>Islamabad, Pk </li>
                 <li>
-                    <a href="tel:+923219007213">+923219007213</a>
+                    <a href="tel:+923219007213">+923211111111</a>
                 </li>
                 <li>
-                    <a href="mailto:hadi@iplex.co">hadi@iplex.co</a>
+                    <a href="mailto:hadi@iplex.co">hadi@example.com</a>
                 </li>
             </ul>
             <!-- \\ -->
-            <h4 class="text-center">Find Me On</h4>
+            <h4 class="text-center mb-3">Find Me On</h4>
             <ul class="social__links d-flex justify-content-center">
                 <li>
-                    <a href="https://www.facebook.com/xavier.hadi.7" target="_blank" class="fa fa-facebook"></a>
+                    <a href="#" target="_blank" class="fa fa-facebook"></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/hadi_pawar" target="_blank" class="fa fa-twitter"></a>
+                    <a href="#" target="_blank" class="fa fa-twitter"></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/hadi_pawar1995/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="#" target="_blank" class="fa fa-instagram"></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/hadi-pawar-993778164/" target="_blank"
-                        class="fa fa-linkedin"></a>
+                    <a href="#" target="_blank" class="fa fa-linkedin"></a>
                 </li>
                 <li>
-                    <a href="https://github.com/abdulhadi1995" target="_blank" class="fa fa-github"></a>
+                    <a href="#" target="_blank" class="fa fa-github"></a>
                 </li>
             </ul>
         </div>
 
         <div class="footer__bottom">
-            <div class="container-fluid">
+            <div class="container__large">
                 <div class="row copyright text-center">
                     <div class="col">
                         <p>
@@ -694,8 +762,9 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/theme-switcher.js"></script>
     <script src="js/custom.js"></script>
 </body>
-
 </html>
