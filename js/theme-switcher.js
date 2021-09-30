@@ -36,6 +36,8 @@ function setTheme(theme) {
         document.getElementById('switcher-id').href = './css/purple.css';
     } else if (theme == 'crimson') {
         document.getElementById('switcher-id').href = './css/crimson.css';
+    } else if (theme == 'olive') {
+        document.getElementById('switcher-id').href = './css/olive.css';
     }
     localStorage.setItem('style', theme);
 }

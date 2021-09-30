@@ -76,17 +76,20 @@ ul,ol {
 .btn-primary {
     background-color: var(--color-primary) !important;
     border-color: var(--color-primary) !important;
+    box-shadow: none !important;
 }
 
 .btn-primary:hover,
-.btn-primary:hover:focus {
+.btn-primary:hover:focus,
+.btn-primary:not(:disabled):not(.disabled):active {
     color: #fff;
     background-color: var(--primary-hover) !important;
     border-color: var(--primary-hover) !important;
+    box-shadow: none !important;
 }
 .btn:focus {
-    outline: none;
-    box-shadow: none;
+    outline: none !important;
+    box-shadow: none !important;
 }
 .bg__darkBlue {
     background-color: #0E0C38 !important;
@@ -143,8 +146,8 @@ section {
 }
 .title__switcher {
     flex: 0 0 100%;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #000;
+    padding-bottom: 0;
+    text-align: center;
 }
 .switcher__toggleBtn {
     width: 40px;
@@ -183,7 +186,7 @@ section {
 }
 .colors__box {
     background-color: #fff;
-    padding: 30px 15px 0 15px;
+    padding: 10px 15px 0 15px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -196,7 +199,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 34px;
+    font-size: 30px;
     margin: 7px 0;
     cursor: pointer;
 }
@@ -207,7 +210,7 @@ section {
     color: #ffb400;
 }
 .switch.bg__pink {
-    color: #ff014f;
+    color: #ff5e94;
 }
 .switch.bg__green {
     color: #66B95C;
@@ -219,7 +222,7 @@ section {
     color: #4169e1;
 }
 .switch.bg__orange {
-    color: #ff4522;
+    color: #fd7e14;
 }
 .switch.bg__sky {
     color: #00D4BD;
@@ -229,6 +232,9 @@ section {
 }
 .switch.bg__crimson {
     color: #e65f78;
+}
+.bg__olive {
+    color: #666d41;
 }
 
 /* theme switcher CSS Start */
@@ -471,13 +477,14 @@ header .navbar .navbar-nav .nav-link:hover:after {
 .down__arrow {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     bottom: 50px;
+    transform: translateX(-50%);
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
      -ms-transition: all .3s ease;
       -o-transition: all .3s ease;
          transition: all .3s ease;
+         z-index: 9;
 }
 @keyframes scroll {
     0% {
@@ -576,7 +583,7 @@ header .navbar .navbar-nav .nav-link:hover:after {
 }
 .pattern__bottom {
     position: absolute;
-    right: -10px;
+    right: -30px;
     bottom: 0;
 }
 /*--- Home CSS End ---*/
@@ -609,7 +616,7 @@ header .navbar .navbar-nav .nav-link:hover:after {
 
 .about__img {
     padding: 35px;
-    background-color: #0E0C38;
+    background-color: var(--color-primary);
     position: relative;
     z-index: 1;
     max-height: 620px;
@@ -967,6 +974,30 @@ header .navbar .navbar-nav .nav-link:hover:after {
     left: 35%;
     top: 77%;
 }
+.testim .dot:nth-child(7) {
+    left: 40%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+}
+.testim .dot:nth-child(8) {
+    left: 60%;
+    top: 42%;
+    width: 40px;
+    height: 40px;
+}
+.testim .dot:nth-child(9) {
+    left: 10%;
+    top: 80%;
+    width: 40px;
+    height: 40px;
+}
+.testim .dot:nth-child(10) {
+    left: 80%;
+    top: 35%;
+    width: 40px;
+    height: 40px;
+}
 .testim .dot img {
     width: 100%;
     height: 100%;
@@ -1134,6 +1165,15 @@ header .navbar .navbar-nav .nav-link:hover:after {
 .form-control:focus {
     outline: 1px solid var(--color-primary);
     outline-offset: -5px;
+}
+.empty_notice {
+    color: #c82333;
+    font-size: 16px;
+    display: none;
+}
+.returnmessage {
+    color: #66B95C;
+    font-size: 16px;
 }
 /*--- Contact Section CSS End ---*/
 
@@ -1309,8 +1349,13 @@ footer:before {
         position: absolute;
         background: #000;
         width: 100%;
-        top: 64px;
+        top: 60px;
         left: 0;
+    }
+    header .navbar .navbar-nav .nav-link, 
+    header .navbar .navbar-nav .nav-link:focus {
+        padding: 35px 15px 20px 15px;
+        font-size: 16px;
     }
     .navbar-nav {
         margin-top: 0;
@@ -1328,11 +1373,19 @@ footer:before {
     }
 
     /* Slider Responsive CSS */
+    .testim .dot {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    .testim .dot.active {
+        width: 55px !important;
+        height: 55px !important;
+    }
     .testim .dot:nth-child(2) {
         top: 10%;
     }
     .testim .dot:nth-child(5) {
-        top: 47%;
+        top: 67%;
     }
     .testim .dot:nth-child(6) {
         top: 62%;
@@ -1340,6 +1393,13 @@ footer:before {
 
     .site__content.added__margin {
         margin-top: 60px;
+    }
+    .testim .dot:nth-child(7) {
+        left: 24%;
+        top: 37%;
+    }
+    .testim .dot:nth-child(10) {
+        top: 45%;
     }
 
 }
@@ -1460,7 +1520,10 @@ footer:before {
     }
     .testim .dot:nth-child(4) {
         left: 5%;
-        top: 55%;
+        top: 45%;
+    }
+    .testim .dot:nth-child(9) {
+        top: 70%;
     }
     .owl-dots {
         display: none;
