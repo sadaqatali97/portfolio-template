@@ -1,13 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-
-@font-face {
-    font-family: 'Haettenschweiler';
-    src: url('../fonts/Haettenschweiler.woff2') format('woff2'),
-        url('../fonts/Haettenschweiler.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Freestyle Script';
