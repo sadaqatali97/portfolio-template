@@ -1380,6 +1380,9 @@ footer:before {
         width: 100%;
         top: 60px;
         left: 0;
+        max-height: calc(100vh - 60px);
+        padding-bottom: 7px;
+        overflow: auto;
     }
     header .navbar .navbar-nav .nav-link, 
     header .navbar .navbar-nav .nav-link:focus {
@@ -1430,6 +1433,12 @@ footer:before {
     .testim .dot:nth-child(10) {
         top: 45%;
     }
+    .title__head {
+        margin-bottom: 40px;
+    }
+    .skills__slider {
+        padding-top: 30px;
+    }
 
 }
 
@@ -1472,10 +1481,6 @@ footer:before {
     }
     .testim {
         margin-top: 0;
-    }
-
-    .title__head {
-        margin-bottom: 40px;
     }
     .about__img {
         margin-top: 0;
