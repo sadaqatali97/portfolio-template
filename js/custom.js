@@ -202,16 +202,20 @@ function contactForm(){
 //-----------------    Scroll to Section    --------------------//
 //--------------------------------------------------------------------//
 function scrollToSection() {
-  $(".nav-link[href^='#']").click(function(e) {
+  $(".nav-link[href^='#'], .footer__list a[href^='#'").click(function(e) {
     e.preventDefault();
     
     var position = $($(this).attr("href")).offset().top;
   
     $("body, html").animate({
-      scrollTop: position
-    }, 400 );
+      scrollTop: position - 30
+    }, 'slow' );
   });
 }
+
+// $('html,body').animate({
+//   scrollTop: $('.page-block-glossary').offset().top - HeaderHeight,
+// }, 'slow');
 
 //--------------------------------------------------------------------//
 //-----------------    Window ScrollTop    --------------------//
