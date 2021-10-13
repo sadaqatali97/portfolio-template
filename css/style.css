@@ -16,7 +16,9 @@
     --color-primary: #dc3545;
     --primary-hover: #c82333;
 }
-
+* {
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -29,9 +31,7 @@ body {
     font-weight: 300;
     padding: 0;
     margin: 0;
-}
-* {
-    box-sizing: border-box;
+    overflow-y: scroll;
 }
 a {
     color: #fff;
@@ -327,9 +327,9 @@ header:after {
 header.shrink:after {
     height: 100%;
 }
-body.scroll-down header {
+/* body.scroll-down header {
     transform: translate3d(0, -100%, 0)
-}
+} */
 header .navbar {
     padding: 0;
     align-items: flex-start;
@@ -456,7 +456,8 @@ header .navbar .navbar-nav .nav-link:hover:after {
 
 /*--- Home CSS Start ---*/
 .home__section {
-    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     position: relative;
@@ -1248,6 +1249,32 @@ footer:before {
 }
 .footer__bottom p {
     margin-bottom: 0;
+}
+.scroll__top__button {
+    width: 45px;
+    height: 45px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 7px;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    font-size: 34px;
+    padding: 0;
+    cursor: pointer;
+    line-height: 42px;
+    transition: 0.3s all ease;
+    animation: scroll ease 2s infinite;
+    opacity: 0;
+    visibility: hidden;
+}
+.scroll__top__button  i {
+    line-height: 35px;
+}
+.scroll__top__button.show {
+    visibility: visible;
+    opacity: 1;
 }
 /*--- Footer CSS End ---*/
 

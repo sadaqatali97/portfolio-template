@@ -48,14 +48,19 @@
 function headerShrink () {
   $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
-    if (scrollTop > 100) {
+    if (scrollTop > 50) {
         $("header").addClass("shrink");
     } else {
       $("header").removeClass("shrink");
     }
+
+    if (scrollTop > 1000) {
+        $(".scroll__top__button").addClass("show");
+    } else {
+      $(".scroll__top__button").removeClass("show");
+    }
   });
 }
-
 
 
 //--------------------------------------------------------------------//
@@ -193,6 +198,32 @@ function contactForm(){
 	});
 }
 
+//--------------------------------------------------------------------//
+//-----------------    Scroll to Section    --------------------//
+//--------------------------------------------------------------------//
+function scrollToSection() {
+  $(".nav-link[href^='#']").click(function(e) {
+    e.preventDefault();
+    
+    var position = $($(this).attr("href")).offset().top;
+  
+    $("body, html").animate({
+      scrollTop: position
+    }, 400 );
+  });
+}
+
+//--------------------------------------------------------------------//
+//-----------------    Window ScrollTop    --------------------//
+//--------------------------------------------------------------------//
+function scrollTopBtnFunction() {
+  var scroll__top__button = $('.scroll__top__button');
+  
+  scroll__top__button.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+}
 
 //--------------------------------------------------------------------//
 //-----------------    Skills Carousel    --------------------//
@@ -236,7 +267,7 @@ $(document).ready(function() {
     $('.nav-item a').click(function(){
       $('.navbar-collapse').removeClass("show");
       $(".ham").removeClass("active");
-  });
+    });
 
 
   // Initialize functions
@@ -245,4 +276,8 @@ $(document).ready(function() {
   headerShrink();
   isotopeMasonry();
   skillsCarousel();
+  scrollTopBtnFunction();
+  scrollToSection();
 });
+
+
