@@ -327,9 +327,6 @@ header:after {
 header.shrink:after {
     height: 100%;
 }
-/* body.scroll-down header {
-    transform: translate3d(0, -100%, 0)
-} */
 header .navbar {
     padding: 0;
     align-items: flex-start;
@@ -524,7 +521,6 @@ header .navbar .navbar-nav .nav-link:hover:after {
 .home__info p {
     font-size: 24px;
     display: flex;
-    /* align-items: center; */
 }
 .highlighted__text {
     color: var(--color-primary);
@@ -941,7 +937,7 @@ header .navbar .navbar-nav .nav-link:hover:after {
     -ms-transition: all .5s ease-in-out;    
     -moz-transition: all .5s ease-in-out;    
     -o-transition: all .5s ease-in-out;    
-    transition: all .5s ease-in-out;
+    transition: all .35s ease-in-out;
 		position: absolute;
         display: flex;
         align-items: center;
@@ -1153,22 +1149,29 @@ header .navbar .navbar-nav .nav-link:hover:after {
     max-width: 900px;
     margin: 0 auto;
 }
+.form-group {
+    position: relative;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 7px;
+    z-index: 1;
+}
 .form-control {
     font-size: 18px;
     font-weight: 400;
     color:#040221;
     border-radius: 0;
     height: 50px;
-    transition: 0.2s all ease;
-    outline-offset: -15px;
+    transition: 0.3s all ease;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    background-color: transparent;
 }
-.form-control:focus {
-    box-shadow: none !important;
+textarea.form-control {
+    height: 150px;
+    resize: none;
 }
-.form-control:focus {
-    outline: 1px solid var(--color-primary);
-    outline-offset: -5px;
-}
+
 .empty_notice {
     color: #c82333;
     font-size: 16px;
@@ -1177,6 +1180,42 @@ header .navbar .navbar-nav .nav-link:hover:after {
 .returnmessage {
     color: #66B95C;
     font-size: 16px;
+}
+.contact__form label {
+    position: absolute;
+    left: 1rem;
+    top: 13px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #040221;
+    border-radius: 0;
+    height: 50px;
+    transition: 0.2s all ease;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    height: auto;
+    opacity: 0.7;
+    margin: 0;
+    z-index: -1;
+}
+
+/* Focus CSS */
+.form-control:focus + label,
+.input__focus label {
+    top: -7px;
+    padding: 0 7px 1px 7px;
+    font-size: 12px;
+    background-color: var(--color-primary);
+    opacity: 1;
+    color: #fff;
+    z-index: 1;
+}
+.form-control:focus,
+.input__focus .form-control  {
+    box-shadow: none !important;
+    border-color:  var(--color-primary);
 }
 /*--- Contact Section CSS End ---*/
 
