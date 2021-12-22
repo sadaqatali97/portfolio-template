@@ -10,6 +10,9 @@
     <meta name="description" content="Personal Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
     <!-- Main CSS-->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -125,7 +128,7 @@
             </div>
 
 
-            <!-- Doen Arrow -->
+            <!-- Down Arrow -->
             <a href="#about" class="down__arrow">
                 <svg xmlns="http://www.w3.org/2000/svg" id="Layer" enable-background="new 0 0 64 64" height="512"
                     viewBox="0 0 64 64" width="512" class="svg replaced-svg">
@@ -421,7 +424,7 @@
                 <div class="title__head">
                     <h2 data-aos="fade-up" data-aos-duration="700">What My Clients Say</h2>
                     <p>
-                        English knees up cup of tea it's your round I victoria sponge in 
+                        English knees up cup of tea it's your round I victoria sponge in
                         my flat bog-standard at public school.
                     </p>
                 </div>
@@ -466,8 +469,8 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <p>
-                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor 
-                                        issue before going to sleep. The issue was fixed the next morning. 
+                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor
+                                        issue before going to sleep. The issue was fixed the next morning.
                                         Thank you Hadi!
                                         This is easily a 5 star freelancer.
                                     </p>
@@ -476,7 +479,7 @@
                                             <img src="images/client-1.jpg" alt="" />
                                         </div>
                                         <div class="info__col">
-                                            <h4>Mr. Joe	Wilkins</h4>
+                                            <h4>Mr. Joe Wilkins</h4>
                                             <span>CEO ABC Company</span>
                                         </div>
                                     </div>
@@ -491,8 +494,8 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <p>
-                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor 
-                                        issue before going to sleep. The issue was fixed the next morning. 
+                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor
+                                        issue before going to sleep. The issue was fixed the next morning.
                                         Thank you Hadi!
                                         This is easily a 5 star freelancer.
                                     </p>
@@ -516,8 +519,8 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <p>
-                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor 
-                                        issue before going to sleep. The issue was fixed the next morning. 
+                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor
+                                        issue before going to sleep. The issue was fixed the next morning.
                                         Thank you Hadi!
                                         This is easily a 5 star freelancer.
                                     </p>
@@ -541,8 +544,8 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <p>
-                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor 
-                                        issue before going to sleep. The issue was fixed the next morning. 
+                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor
+                                        issue before going to sleep. The issue was fixed the next morning.
                                         Thank you Hadi!
                                         This is easily a 5 star freelancer.
                                     </p>
@@ -566,8 +569,8 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <p>
-                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor 
-                                        issue before going to sleep. The issue was fixed the next morning. 
+                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor
+                                        issue before going to sleep. The issue was fixed the next morning.
                                         Thank you Hadi!
                                         This is easily a 5 star freelancer.
                                     </p>
@@ -591,8 +594,8 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <p>
-                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor 
-                                        issue before going to sleep. The issue was fixed the next morning. 
+                                        Working with Hadi has been a pleasure. Better yet - I alerted them of a minor
+                                        issue before going to sleep. The issue was fixed the next morning.
                                         Thank you Hadi!
                                         This is easily a 5 star freelancer.
                                     </p>
@@ -601,7 +604,7 @@
                                             <img src="images/client-6.jpeg" alt="" />
                                         </div>
                                         <div class="info__col">
-                                            <h4>Amy	Piper</h4>
+                                            <h4>Amy Piper</h4>
                                             <span>CTO ABC Company</span>
                                         </div>
                                     </div>
@@ -630,28 +633,42 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <form class="contact__form">
+                        <form action="/send_mail.php" method="post" class="contact__form">
                             <div class="row">
                                 <div class="col-sm-6 mb-4">
-                                    <input placeholder="Name*" id="name" class="form-control" />
+                                    <div class="form-group mb-0">
+                                        <input name="name" id="name" class="form-control" />
+                                        <label>Name*</label>
+                                    </div>
                                 </div>
                                 <div class="col-sm-6 mb-4">
-                                    <input placeholder="Email*" id="email" class="form-control" />
+                                    <div class="form-group mb-0">
+                                        <input name="" id="email" class="form-control" />
+                                        <label>Email*</label>
+                                    </div>
                                 </div>
                                 <div class="col-sm-6 mb-4">
-                                    <input placeholder="Phone*" id="phone" class="form-control" />
+                                    <div class="form-group mb-0 ">
+                                        <input id="phone" class="form-control" />
+                                        <label>Phone*</label>
+                                    </div>
                                 </div>
                                 <div class="col-sm-6 mb-4">
-                                    <select class="form-control">
-                                        <option>Budget</option>
-                                        <option>100$</option>
-                                        <option>500$</option>
-                                        <option>1000$</option>
-                                    </select>
+                                    <div class="form-group mb-0">
+                                        <select class="form-control">
+                                            <option></option>
+                                            <option>100$</option>
+                                            <option>500$</option>
+                                            <option>1000$</option>
+                                        </select>
+                                        <label>Budget*</label>
+                                    </div>
                                 </div>
                                 <div class="col-12 mb-4">
-                                    <textarea id="message" class="form-control" rows="5"
-                                        placeholder="Message*"></textarea>
+                                    <div class="form-group mb-0">
+                                        <textarea id="message" class="form-control" rows="5"></textarea>
+                                        <label>Message*</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="empty_notice mb-2">All fields required*</div>
@@ -747,7 +764,7 @@
                 <div class="row copyright text-center">
                     <div class="col">
                         <p>
-                            Copyright &copy; 2021 Pheonix | All rights reserved
+                            Copyright &copy; <span id="year"></span> Pheonix | All rights reserved
                         </p>
                     </div>
                 </div>
