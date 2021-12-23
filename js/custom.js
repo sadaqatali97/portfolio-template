@@ -9,7 +9,7 @@
  */
 
 // email url
-const mailUrl = 'https://sadaqataliraja.com/html/send_mail.php ';
+const mailUrl = 'https://sadaqataliraja.com/send_mail.php ';
 
 //--------------------------------------------------------------------//
 //-----------------    ISOTOPES    --------------------//
