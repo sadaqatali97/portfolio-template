@@ -18,7 +18,7 @@ header("Access-Control-Allow-Methods: *");
   <p>This email contains HTML Tags!</p>
   <table>
   <tr>
-  <th>Firstname</th>
+  <th>Name</th>
   <th>Email</th>
   <th>Phone</th>
   <th>Message</th>

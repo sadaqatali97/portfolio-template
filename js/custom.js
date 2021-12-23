@@ -8,6 +8,9 @@
  * @format
  */
 
+// email url
+const mailUrl = 'https://sadaqataliraja.com/html/send_mail.php ';
+
 //--------------------------------------------------------------------//
 //-----------------    ISOTOPES    --------------------//
 //--------------------------------------------------------------------//
@@ -179,6 +182,7 @@ function contactForm() {
     var email = $('.contact__form #email').val();
     var message = $('.contact__form #message').val();
     var phone = $('.contact__form #phone').val();
+    var budget = $('#budget option:selected').text();
     var success = $('.contact__form .returnmessage').data('success');
 
     $('.contact__form .returnmessage').empty();
@@ -191,30 +195,32 @@ function contactForm() {
         .first()
         .text('Your message has been received, We will contact you soon.');
       $('div.empty_notice').removeClass('d-flex');
+      $('.contact__form #name').val('');
+      $('.contact__form #email').val('');
+      $('.contact__form #message').val('');
+      $('.contact__form #phone').val('');
+      $('#budget option:selected').text('');
+      $('.form-group').removeClass('input__focus');
+      var newData = {
+        name: name,
+        email: email,
+        message: message,
+        budget: budget,
+        phone: phone,
+      };
+      console.log('new data', newData);
       // // Returns successful data submission message when the entered information is stored in database.
       $.post(
-        'http://localhost/html/send_mail.php',
+        mailUrl,
         {
           ajax_name: name,
           ajax_email: email,
           ajax_message: message,
           ajax_phone: phone,
+          ajax_budget: budget,
         },
         function (data) {
           console.log('response', data);
-
-          // $(".contact__form .returnmessage").append(data);//Append returned message to message paragraph
-
-          // if($(".contact__form .returnmessage span.contact_error").length){
-          // 	$(".contact__form .returnmessage").slideDown(500).delay(2000).slideUp(500);
-          // }else{
-          // 	$(".contact__form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
-          // 	$(".contact__form .returnmessage").slideDown(500).delay(4000).slideUp(500);
-          // }
-
-          // if(data===""){
-          // 	$("#contact__form")[0].reset();//To reset form fields on success
-          // }
         }
       );
     }
