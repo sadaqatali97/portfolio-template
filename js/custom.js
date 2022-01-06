@@ -8,8 +8,9 @@
  * @format
  */
 
-// email url
-const mailUrl = 'https://sadaqataliraja.com/send_mail.php ';
+// here you cand add send_mail.php path
+// Example: sitename.com/send_mail.php
+const mailUrl = '';
 
 //--------------------------------------------------------------------//
 //-----------------    ISOTOPES    --------------------//
