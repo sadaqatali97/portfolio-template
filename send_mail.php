@@ -6,8 +6,8 @@ header("Access-Control-Allow-Methods: *");
  $phone = $_POST['ajax_phone'];
  $message = $_POST['ajax_message'];
  if (!empty($name)) {
-  $to = "sadaqat@iplex.co";
-  $subject = "Portfolio Email";
+  $to = "mail@mail.com";
+  $subject = "Your Subject";
   
   $message = "
   <html>
@@ -42,6 +42,7 @@ header("Access-Control-Allow-Methods: *");
   $headers .= 'From: '.$email . "\r\n";
  $response =  mail($to,$subject,$message,$headers);
  echo $response;
+ exit();
  }
 
 ?>
